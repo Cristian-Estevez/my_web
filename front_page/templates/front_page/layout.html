@@ -1,0 +1,26 @@
+{% load static  %}
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'front_page/css/styles.css' %}">
+	
+	<title>Cristian Estevez's Portfolio</title>
+	
+</head>
+<body class="container">
+	{% include './navbar.html' %}
+	
+		
+
+	{% block content %}
+
+	{% endblock %}
+
+	{% block footer %} {% endblock %}
+</body>
+</html>
