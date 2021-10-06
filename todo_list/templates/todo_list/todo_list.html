@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	{% for task in todo_list %}
+		
+		<p>{{ task }} <input type="checkbox" value="{{ task }}"></p> 
+		<a href="{% url 'todo_list:task_delete_view' pk=task.id %}" title="Eliminar">Delete</a>
+		
+	{% endfor %}
+	
+	<p><a href="{% url 'todo_list:add_task' %}">Add new Task</a></p>
+	
+</body>
+</html>

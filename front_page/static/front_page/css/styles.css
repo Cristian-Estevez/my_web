@@ -4,9 +4,21 @@ div {
 	display: block;
 }
 
+a {
+	text-decoration: none;
+	color :inherit;
+}
+
+html, body {
+	margin: 0px;
+}
+
 body {
-	background: rgb(2,0,36);
-	background: linear-gradient(rgba(49,45,124,1) 0%, rgba(9,121,114,1) 10%, rgba(9,121,114,1) 90%, rgba(2,0,36,1) 95%, rgba(2,0,36,1) 100%);
+	width: 100%;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(rgba(49, 45, 124, 1) 0%,
+		rgba(9, 121, 114, 1) 10%, rgba(9, 121, 114, 1) 90%, rgba(2, 0, 36, 1)
+		95%, rgba(2, 0, 36, 1) 100%);
 	background-repeat: repeat-x;
 	background-size: 100%;
 }
@@ -15,10 +27,12 @@ body {
 	width: 100%;
 	margin: auto;
 	padding: auto;
+	text-align: center;
+	font-family: 'Source Code Pro', monospace;
 }
 
 h1 {
-	font-family: 'Source Code Pro', monospace; 
+	font-family: 'Source Code Pro', monospace;
 	font-size: 48px;
 	margin: 0 0 16px 0;
 	font-weight: 600;
@@ -27,45 +41,142 @@ h1 {
 }
 
 .short-explain {
-	padding-left: 0.3rem;
-	padding-right: 0.3rem;
 	float: right;
-	width: auto;
 	height: auto;
-	margin: 4px;
+	margin: 0 5px;
+	padding-left: 0rem 0.3rem 0rem 0.3rem;
+	width: 50%;
 	color: #FFF;
-	background: linear-gradient(rgba(200, 200, 200, 0.5), rgba(30, 30, 30, 0.5)); 
+	background: linear-gradient(rgba(200, 200, 200, 0.5),
+		rgba(30, 30, 30, 0.5));
 	border-radius: 5px;
-	border:thin;
+	border: thin;
 	border-style: ridge;
 	font-size: 20px;
 	font-weight: 700;
+	box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, .5), 15px 15px 15px -10px
+		rgba(0, 0, 0, .5);
 }
 
 .container-title {
 	width: 90%;
-	margin-top: 2rem;
+	text-align: center;
+	margin: auto;
+	padding-top: 2rem;
+	margin-bottom: 2rem;
 	padding: 2rem;
-	color: rgb(9, 25, 54);
-	box-shadow: -10px 15px 15px 10px rgba(0, 0, 0, .5), 15px 15px 15px -10px rgba(0, 0, 0, .5);
-	background: radial-gradient(rgba(49,45,124,1) 0%, rgba(120, 120, 120, 0.5) 30%, rgba(200, 200, 200, 0.5) 60%, rgba(0, 0, 0, 0.5) 95%, rgba(49,45,124,1) 100%);
+	color: #AEB0BA;
+	box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, .5), 15px 15px 15px -10px
+		rgba(0, 0, 0, .5);
+	background: radial-gradient(rgba(49, 45, 124, 1) 0%,
+		rgba(120, 120, 120, 0.5) 30%, rgba(200, 200, 200, 0.5) 60%,
+		rgba(0, 0, 0, 0.5) 95%, rgba(49, 45, 124, 1) 100%);
 	border-radius: 5px;
 	border-bottom: solid;
 }
+
+.main-block {
+	margin: 0 -5px;
+	width: 85%;
+	margin: auto;
+}
+
+.main-features {
+	width: 40%;
+	background: linear-gradient(rgba(192, 192, 192, .8),
+		rgba(49, 45, 124, 1));
+	box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, .5), 15px 15px 15px -10px
+		rgba(0, 0, 0, .5);
+	border-radius: 5px;
+	margin: 0 5px;
+	color: rgba(49, 45, 124, 1);
+	overflow: hidden;
+}
+
+.main-features a {
+	background: silver;
+	padding: 0.6rem;
+	border-radius: 5px;
+	border: solid 2px #555753;
+	text-decoration: none;
+	color: inherit;
+	width: auto;
+}
+
+.main-features p {
+	margin: 1.5rem;
+	font-weight: bold;
+}
+
+.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: rgba(200, 200, 200, 0.7);
+}
+
+.web-projects {
+	background: gray;
+}
+
+.web-projects-carr-title {
+	border-top: solid;
+	color: black;
+	height: auto;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.web-projects-carr-container {
+	background: #eaecd2;
+}
+
+.web-projects-carr-container img {
+	width: 100%;
+	height: auto;
+	max-width: 850px;
+}
+
+.web-projects-carr-footer {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1rem;
+	border-bottom: solid;
 	
+}
+
+.web-projects .brief {
+	width: 70%;
+	background: #d3d7cf;
+	color: black;
+	border: thin;
+	margin: auto;
 	
-@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 760px) {
 	.container-title {
-		box-shadow: -10px 15px 15px 10px rgba(0, 0, 0, .5);
-		padding: 1rem;
+		width: 75%;
 	}
-	
 	h1 {
 		font-size: 2rem;
 		font-weight: 1000;
 	}
-	
 	.short-explain {
 		font-size: 1.2rem;
+		width: 85%;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	.main-block {
+		display: block;
+		width: 85%;
+		margin: auto;
+	}
+	.main-features {
+		width: 87%;
+		margin-top: 2rem;
+		padding: 1.5rem .5rem 1.5rem .5rem;
 	}
 }
